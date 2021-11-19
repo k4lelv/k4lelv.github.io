@@ -18,11 +18,11 @@ tags:
 
 ## Lista de ejercicios
 
-Antes que nada, quiero recordar que estos ejercicios son sacado de un libro de texto que no recuerdo muy bien xd, si lo encuentro, mas tarde, les dejare un link por si estan interesados.
+Antes que nada, quiero recordar que estos ejercicios son sacado de un libro de texto que no recuerdo muy bien xd, si lo encuentro, mas tarde, les dejaré un link por si lo quieren ir a ver mas detalladamente.
 
-Comenzamos abriendo algun editor de texto a tu gusto, en este caso lo trabaje con el programa `Dev C++`.
+Comenzamos abriendo algun editor de texto a tu gusto, en este caso, yo trabajaré con el programa `Dev C++`.
 
-El primer Ejericio nos dice:
+El primer Ejercicio nos dice:
 
 * Calcular los N primeros multiplos de 4 (4 inclusive), donde N es un valor introducido por teclado.
 
