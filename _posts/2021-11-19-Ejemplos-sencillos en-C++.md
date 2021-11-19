@@ -14,9 +14,7 @@ tags:
   - C++
 ---
 
-<center>
-<img src="https://k4lelv.github.io/assets/images/c++-examples/vs-code-in-a-computer">
-</center>
+![](https://k4lelv.github.io/assets/images/c++-examples/vs-code-in-a-computer)
 
 ## Lista de ejercicios
 
@@ -74,3 +72,5 @@ int main (){
 	return 0;
 }
 ```
+
+* El sistema de calificación americano (de Estados Unidos) se suele calcular de acuerdo al siguiente cuadro
