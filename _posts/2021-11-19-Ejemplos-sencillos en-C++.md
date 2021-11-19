@@ -67,7 +67,7 @@ int main (){
 	cout << "\n--------------------------------\n";
 	cout << "Gracias :)\n\n";
 	
-	cout << "Author: https://k4alelv.github.io ";
+	cout << "Author: https://Kalel-24.github.io ";
 	
 	return 0;
 }
