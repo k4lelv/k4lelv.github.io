@@ -5,7 +5,7 @@ excerpt: "En este artículo comparto algunos de los archivos que cree."
 date: 2020-01-30
 classes: wide
 header:
-  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/bspwm/bspwm-background.jpg
+  teaser: https://k4lelv.github.io/assets/images/bspwm/bspwm-background.jpg
   teaser_home_page: true
 categories:
   - YouTube
@@ -19,7 +19,7 @@ tags:
   - Powerlevel10k
 ---
 
-![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/bspwm/bspwm-background.jpg)
+![](https://k4lelv.github.io/assets/images/bspwm/bspwm-background.jpg)
 
 
 Para el que lo quiera tomar en consideración, por aquí dejo las especificaciones de mi sistema operativo:

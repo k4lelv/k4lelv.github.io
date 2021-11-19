@@ -5,7 +5,7 @@ excerpt: "Utilidad en Python para obtener una TTY totalmente interactiva mediant
 date: 2020-02-04
 classes: wide
 header:
-  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/ttyOverHTTP/ttyoverhttp-banner.jpg
+  teaser: https://k4lelv.github.io/assets/images/ttyOverHTTP/ttyoverhttp-banner.jpg
   teaser_home_page: true
 categories:
   - Scripting
@@ -16,7 +16,7 @@ tags:
   - Herramientas
 ---
 
-![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/ttyOverHTTP/linux-banner.png)
+![](https://k4lelv.github.io/assets/images/ttyOverHTTP/linux-banner.png)
 
 Podéis encontrar esta herramienta en el siguiente enlace:
 
@@ -37,13 +37,13 @@ Para los que no entiendan la problemática de las webshells, podéis probarlo po
 Como es de esperar, a través de la variable `cmd` está más que claro que vamos a ser capaces de ejecutar comandos a nivel de sistema como el usuario `www-data`:
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/ttyOverHTTP/first-webserver.png">
+<img src="https://k4lelv.github.io/assets/images/ttyOverHTTP/first-webserver.png">
 </p>
 
 Sin embargo, fijaros qué es lo que pasa si tratamos por ejemplo de efectuar una migración de usuario:
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/ttyOverHTTP/second-webserver.png">
+<img src="https://k4lelv.github.io/assets/images/ttyOverHTTP/second-webserver.png">
 </p>
 
 No podemos introducir la contraseña del usuario `root`, cosa que podríamos hacer si hiciéramos un tratamiento de la TTY desde consola, ya sabéis... el `stty raw -echo` y toda la movida.
@@ -53,7 +53,7 @@ De la misma forma, tampoco podemos correr desde una webshell el servicio `mysql`
 Todo esto sucede porque básicamente no estamos en una TTY, podemos comprobarlo de la siguiente forma:
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/ttyOverHTTP/third-webserver.png">
+<img src="https://k4lelv.github.io/assets/images/ttyOverHTTP/third-webserver.png">
 </p>
 
 Entonces bien, ¿qué hacemos en estos casos?, porque si nos entabláramos una Reverse Shell obviamente ya todo estaría hecho, ¿pero y si por iptables hay ciertas reglas configuradas tanto por ipv4 como por ipv6 que impiden conexiones salientes para entablarnos nuestra conexión?. 

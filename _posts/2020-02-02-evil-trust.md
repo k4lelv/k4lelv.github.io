@@ -5,7 +5,7 @@ excerpt: "Recientemente en la h-c0n presentaron la herramienta evilTrust. En est
 date: 2020-02-02
 classes: wide
 header:
-  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/evil.png
+  teaser: https://k4lelv.github.io/assets/images/evil-trust/evil.png
   teaser_home_page: true
 categories:
   - Scripting
@@ -16,19 +16,19 @@ tags:
 ---
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/evil.png" width="200">
+<img src="https://k4lelv.github.io/assets/images/evil-trust/evil.png" width="200">
 </p>
 
 Recientemente estuve en la **h-c0n** presentando la herramienta [evilTrust](https://github.com/k4lelv/evilTrust). Antes que nada quiero agradecer a los organizadores del evento por invitarme y a todos los presentes por la gran acogida, lo pasamos entre todos bastante bien.
 
 <div class="row">
   <div class="columns">
-    <img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/Photo5.png" alt="Snow" style="width:30%">
-    <img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/Photo4.png" alt="Forest" style="width:37%">
-    <img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/Photo2.png" alt="Mountains" style="width:30%">
-    <img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/Photo3.png" alt="Mountains" style="width:30%">
-    <img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/Photo1.png" alt="Mountains" style="width:34%">
-    <img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/Photo6.png" alt="Mountains" style="width:34%">
+    <img src="https://k4lelv.github.io/assets/images/evil-trust/Photo5.png" alt="Snow" style="width:30%">
+    <img src="https://k4lelv.github.io/assets/images/evil-trust/Photo4.png" alt="Forest" style="width:37%">
+    <img src="https://k4lelv.github.io/assets/images/evil-trust/Photo2.png" alt="Mountains" style="width:30%">
+    <img src="https://k4lelv.github.io/assets/images/evil-trust/Photo3.png" alt="Mountains" style="width:30%">
+    <img src="https://k4lelv.github.io/assets/images/evil-trust/Photo1.png" alt="Mountains" style="width:34%">
+    <img src="https://k4lelv.github.io/assets/images/evil-trust/Photo6.png" alt="Mountains" style="width:34%">
   </div>
 </div>
 <br>
@@ -313,58 +313,58 @@ Como pequeña anotación, durante el evento, algunos compañeros hicieron uso de
 
 Configuramos las características de nuestro AP:
 
-![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_one.png)
+![](https://k4lelv.github.io/assets/images/evil-trust/step_one.png)
 
 Definimos la plantilla a utilizar:
 
-![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_two.png)
+![](https://k4lelv.github.io/assets/images/evil-trust/step_two.png)
 
 Quedamos a la espera de que alguna víctima se conecte a nuestro AP para visualizar credenciales introducidas:
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_three.png">
+<img src="https://k4lelv.github.io/assets/images/evil-trust/step_three.png">
 </p>
 
 La víctima ve que hay una WiFi gratis disponible a su alcance y se conecta:
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_four.jpg">
+<img src="https://k4lelv.github.io/assets/images/evil-trust/step_four.jpg">
 </p>
 
 Tras la asociación al AP, se abre el navegador de manera automática solicitando las credenciales de acceso a la plataforma para continuar navegando:
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_five.jpg">
+<img src="https://k4lelv.github.io/assets/images/evil-trust/step_five.jpg">
 </p>
 
 La víctima introduce sus credenciales para poder continuar navegando:
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_six.jpg">
+<img src="https://k4lelv.github.io/assets/images/evil-trust/step_six.jpg">
 </p>
 
 El atacante visualiza las credenciales introducidas:
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_seven.png">
+<img src="https://k4lelv.github.io/assets/images/evil-trust/step_seven.png">
 </p>
 
 La víctima es redirigida al portal del segundo factor de autenticación de la plataforma:
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_eight.jpg">
+<img src="https://k4lelv.github.io/assets/images/evil-trust/step_eight.jpg">
 </p>
 
 El atacante valida las credenciales de la víctima desde otro navegador y como esta utiliza segundo factor de autenticación, se envía un SMS a la víctima, introduciendo posteriormente su código en la plantilla:
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_nine.jpg">
+<img src="https://k4lelv.github.io/assets/images/evil-trust/step_nine.jpg">
 </p>
 
 El atacante recibe desde consola el código y posteriormente accede a su cuenta:
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_ten.png">
+<img src="https://k4lelv.github.io/assets/images/evil-trust/step_ten.png">
 </p>
 
 

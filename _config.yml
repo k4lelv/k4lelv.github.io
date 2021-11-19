@@ -23,8 +23,8 @@ description              : "Articulos sobre programacion & cyberseguridad"
 url                      : "https://k4lelv.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "k4lelv/k4lelv.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-logo                     : "https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/masthead.png"
-teaser                   : # path of fallback teaser image, e.g. "https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/500x300.png"
+logo                     : "https://k4lelv.github.io/assets/images/masthead.png"
+teaser                   : # path of fallback teaser image, e.g. "https://k4lelv.github.io/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name             : "k4lelv"
-  avatar           : "https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/avatar.png"
+  avatar           : "https://k4lelv.github.io/assets/images/avatar.png"
   bio              : "Pentester student / Developer / Halo's world fan"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"

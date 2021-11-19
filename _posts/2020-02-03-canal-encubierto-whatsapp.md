@@ -5,7 +5,7 @@ excerpt: "En el siguiente artículo, os muestro una forma de mantener conversaci
 date: 2020-02-03
 classes: wide
 header:
-  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-canal-encubierto/whatsapp-banner.jpeg
+  teaser: https://k4lelv.github.io/assets/images/whatsapp-canal-encubierto/whatsapp-banner.jpeg
   teaser_home_page: true
 categories:
   - Research
@@ -16,7 +16,7 @@ tags:
 ---
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-canal-encubierto/whatsapp-banner.jpeg" width="500">
+<img src="https://k4lelv.github.io/assets/images/whatsapp-canal-encubierto/whatsapp-banner.jpeg" width="500">
 </p>
 
 En el siguiente artículo, os muestro una forma de mantener conversaciones encubiertas sin que quede registro en el historial de conversaciones de WhatsApp. De esta forma, dos personas pueden mantener una conversación mediante la lectura de logs a tiempo de escritura sin necesidad de enviar el mensaje.
@@ -30,7 +30,7 @@ La URL que estaré utilizando para el canal encubierto será la siguiente:
 * [http://k4lelv.herokuapp.com](http://k4lelv.herokuapp.com)
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-canal-encubierto/page-herokuapp.jpg">
+<img src="https://k4lelv.github.io/assets/images/whatsapp-canal-encubierto/page-herokuapp.jpg">
 </p>
 
 Entonces bien, ¿cómo hacemos?, pues fijaros. Una de las utilidades de heroku es el comando `heroku logs -t` aplicado desde consola, donde podemos visualizar las peticiones a tiempo real en formato log que se están realizando contra el servidor. Para el que no cuente con `heroku` instalado en el sistema, podéis aplicar el comando `snap install heroku --classic` y ya lo tendríais. 
@@ -108,13 +108,13 @@ Ya en este punto, podéis comenzar con la conversación encubierta.
 Lo único que tenéis que hacer es lo siguiente: Abrid una conversación en WhatsApp con alguno de vuestros contactos, haced como si fuerais a enviar un mensaje a vuestro compañero escribiendo la dirección URL (en este caso la mía como PoC) [http://k4lelv.herokuapp.com/](http://k4lelv.herokuapp.com/) y posteriormente escribid vuestro mensaje pegado a la barra `/`, por ejemplo:
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-canal-encubierto/whatsapp-victor.jpg">
+<img src="https://k4lelv.github.io/assets/images/whatsapp-canal-encubierto/whatsapp-victor.jpg">
 </p>
 
 Inmediatamente tras introducir los nuevos caracteres después de la barra `/`, empezaréis a ver desde el `heroku logs` a tiempo real los caracteres que se están escribiendo, sin enviar el mensaje a nuestro contacto:
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-canal-encubierto/logs-heroku.jpg">
+<img src="https://k4lelv.github.io/assets/images/whatsapp-canal-encubierto/logs-heroku.jpg">
 </p>
 
 De hecho si os fijáis, se puede considerar también un posible `IP Disclosure`, dado que podemos ver direcciones IP internas de WhatsApp:

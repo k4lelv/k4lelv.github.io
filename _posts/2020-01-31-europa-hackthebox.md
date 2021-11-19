@@ -5,9 +5,9 @@ excerpt: "Una máquina muy interesante. En este caso, comparto el script `Autopw
 date: 2020-01-31
 classes: wide
 header:
-  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/htb-writeup-europa/europa_logo.png
+  teaser: https://k4lelv.github.io/assets/images/htb-writeup-europa/europa_logo.png
   teaser_home_page: true
-  icon: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/hackthebox.webp
+  icon: https://k4lelv.github.io/assets/images/hackthebox.webp
 categories:
   - HackTheBox
   - Autopwn
@@ -21,7 +21,7 @@ tags:
 ---
 
 <p align="center">
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/htb-writeup-europa/europa_logo.png">
+<img src="https://k4lelv.github.io/assets/images/htb-writeup-europa/europa_logo.png">
 </p>
 
 Una máquina muy interesante la cual resolvemos en mi canal de YouTube. En este caso, os comparto el script `Autopwn` que nos habíamos configurado en Python, donde tras su ejecución se nos automatiza la intrusión y la escalada de privilegios mediante el uso de la librería pwn.

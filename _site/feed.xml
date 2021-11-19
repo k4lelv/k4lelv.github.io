@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-16T10:40:47+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">k4lelv.io</title><subtitle>Artículos sobre ciberseguridad, CTFs e investigaciones</subtitle><author><name>k4lelv</name><email>s4vipriv@gmail.com</email></author><entry><title type="html">Falsificación de mensajes en WhatsApp</title><link href="http://localhost:4000/falsificacion-mensajes-whatsapp/" rel="alternate" type="text/html" title="Falsificación de mensajes en WhatsApp" /><published>2020-02-10T00:00:00+00:00</published><updated>2020-02-10T00:00:00+00:00</updated><id>http://localhost:4000/falsificacion-mensajes-whatsapp</id><content type="html" xml:base="http://localhost:4000/falsificacion-mensajes-whatsapp/">&lt;center&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/whatsapp.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-fake-messages/whatsapp.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;h2 id=&quot;cómo-reproducir-este-bug&quot;&gt;¿Cómo reproducir este bug?&lt;/h2&gt;
@@ -9,28 +9,28 @@
 &lt;p&gt;Comenzamos presionando la combinación &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl+Shift+C&lt;/code&gt;. Posteriormente, nos dirigimos a la pestaña &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sources&lt;/code&gt; desde WhatsApp Web:&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step1.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step1.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Una vez hecho, nos iremos a la pestaña &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Search&lt;/code&gt; situada en la zona inferior y buscaremos la cadena &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Promise.callSynchronously(function()&lt;/code&gt;&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step2.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step2.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Veremos que se produce un match. Haremos click en el resultado obtenido y posteriormente en la zona superior seleccionamos el modo de visión &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Pretty Print&lt;/code&gt; para que no nos sangren los ojos:&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step3.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step3.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Ya en este punto, presionaremos la combinación de teclas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl+F&lt;/code&gt; y buscaremos nuevamente por la cadena &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Promise.callSynchronously(function()&lt;/code&gt;. En esta ocasión, buscaremos el segundo match que se produzca:&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step4.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step4.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -38,7 +38,7 @@ Ya en este punto, presionaremos la combinación de teclas &lt;code class=&quot;l
 &lt;p&gt;Posteriormente, establecemos un &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Breakpoint&lt;/code&gt; en la sección &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var t = e.id;&lt;/code&gt;, haciendo para ello click en el número de la línea:&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step5.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step5.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -48,7 +48,7 @@ Ya en este punto, presionaremos la combinación de teclas &lt;code class=&quot;l
 &lt;p&gt;Escribiremos como respuesta lo que queramos, yo en este caso he escrito &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;No sé si conocerás el canal de k4lelv&lt;/code&gt;. Tras enviar el mensaje, veremos que alcanzamos el &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Breakpoint&lt;/code&gt; y que el mensaje no llega a enviarse:&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step6.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step6.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -56,7 +56,7 @@ Ya en este punto, presionaremos la combinación de teclas &lt;code class=&quot;l
 &lt;p&gt;Si nos vamos a la pestaña &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Console&lt;/code&gt; dentro de la pestaña &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Sources&lt;/code&gt;, veremos que en este preciso instante podemos desglosar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e&lt;/code&gt;, pudiendo así ver todos los atributos que hacen referencia a la conversación que estamos llevando a cabo:&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step7.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step7.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -66,7 +66,7 @@ Ya en este punto, presionaremos la combinación de teclas &lt;code class=&quot;l
 &lt;p&gt;Ya en este punto, podremos manipular el mensaje de mención al que estamos respondiendo de la siguiente forma:&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step8.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step8.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -74,7 +74,7 @@ Ya en este punto, presionaremos la combinación de teclas &lt;code class=&quot;l
 &lt;p&gt;Lo único que tendremos que hacer posteriormente es darle al &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Play&lt;/code&gt; para que el mensaje siga su flujo y salgamos del &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Breakpoint&lt;/code&gt;:&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step9.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step9.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -82,7 +82,7 @@ Ya en este punto, presionaremos la combinación de teclas &lt;code class=&quot;l
 &lt;p&gt;Una vez hecho, podremos ver lo siguiente:&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step10.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step10.jpg&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -92,7 +92,7 @@ Ya en este punto, presionaremos la combinación de teclas &lt;code class=&quot;l
 &lt;p&gt;Todo esto desde WhatsApp web, y te preguntarás… ¿cómo se ve desde el móvil?, pues se vería exactamente igual:&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step11.jpg&quot; width=&quot;400&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step11.jpg&quot; width=&quot;400&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -108,7 +108,7 @@ Ya en este punto, presionaremos la combinación de teclas &lt;code class=&quot;l
 &lt;p&gt;Este último en concreto ha sido parcheado, sin embargo sólo en el ámbito grupal (grupos de WhatsApp), en el sentido de que ya no afecta a los componentes de un grupo, sino al propio emisor del mensaje especialmente diseñado:&lt;/p&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step12.jpg&quot; width=&quot;400&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step12.jpg&quot; width=&quot;400&quot; /&gt;
 &lt;/center&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
@@ -8217,7 +8217,7 @@ k4lelv@parrot:~# ifconfig wlan0mon up
 k4lelv@parrot:~# aireplay-ng &lt;span class=&quot;nt&quot;&gt;-3&lt;/span&gt; –b &amp;lt;BSSID&amp;gt; &lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt; &amp;lt;macFalsa&amp;gt; wlan0mon
 k4lelv@parrot:~# aireplay-ng –-deauth 1 –a &amp;lt;BSSID&amp;gt; &lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt; &amp;lt;macFalsa&amp;gt; wlan0mon
 k4lelv@parrot:~# aircrack-ng &amp;lt;archivoPCAP&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>k4lelv</name><email>s4vipriv@gmail.com</email></author><category term="OSWP" /><category term="Offensive Security" /><category term="Pentesting" /><category term="Examen" /><category term="Guías" /><summary type="html">Para aquellos interesados en certificarse de OSWP, por aquí os dejo una guía hecha por mi donde de manera desglosada comentamos cada uno de los puntos importantes a tener en cuenta de cara a la examinación.</summary></entry><entry><title type="html">ttyOverHTTP - Herramienta</title><link href="http://localhost:4000/ttyoverhttp/" rel="alternate" type="text/html" title="ttyOverHTTP - Herramienta" /><published>2020-02-04T00:00:00+00:00</published><updated>2020-02-04T00:00:00+00:00</updated><id>http://localhost:4000/ttyoverhttp</id><content type="html" xml:base="http://localhost:4000/ttyoverhttp/">&lt;p&gt;&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/ttyOverHTTP/linux-banner.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>k4lelv</name><email>s4vipriv@gmail.com</email></author><category term="OSWP" /><category term="Offensive Security" /><category term="Pentesting" /><category term="Examen" /><category term="Guías" /><summary type="html">Para aquellos interesados en certificarse de OSWP, por aquí os dejo una guía hecha por mi donde de manera desglosada comentamos cada uno de los puntos importantes a tener en cuenta de cara a la examinación.</summary></entry><entry><title type="html">ttyOverHTTP - Herramienta</title><link href="http://localhost:4000/ttyoverhttp/" rel="alternate" type="text/html" title="ttyOverHTTP - Herramienta" /><published>2020-02-04T00:00:00+00:00</published><updated>2020-02-04T00:00:00+00:00</updated><id>http://localhost:4000/ttyoverhttp</id><content type="html" xml:base="http://localhost:4000/ttyoverhttp/">&lt;p&gt;&lt;img src=&quot;https://k4lelv.github.io/assets/images/ttyOverHTTP/linux-banner.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Podéis encontrar esta herramienta en el siguiente enlace:&lt;/p&gt;
 
@@ -8239,13 +8239,13 @@ k4lelv@parrot:~# aircrack-ng &amp;lt;archivoPCAP&amp;gt;
 &lt;p&gt;Como es de esperar, a través de la variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cmd&lt;/code&gt; está más que claro que vamos a ser capaces de ejecutar comandos a nivel de sistema como el usuario &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;www-data&lt;/code&gt;:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/ttyOverHTTP/first-webserver.png&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/ttyOverHTTP/first-webserver.png&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Sin embargo, fijaros qué es lo que pasa si tratamos por ejemplo de efectuar una migración de usuario:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/ttyOverHTTP/second-webserver.png&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/ttyOverHTTP/second-webserver.png&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;No podemos introducir la contraseña del usuario &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root&lt;/code&gt;, cosa que podríamos hacer si hiciéramos un tratamiento de la TTY desde consola, ya sabéis… el &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stty raw -echo&lt;/code&gt; y toda la movida.&lt;/p&gt;
@@ -8255,7 +8255,7 @@ k4lelv@parrot:~# aircrack-ng &amp;lt;archivoPCAP&amp;gt;
 &lt;p&gt;Todo esto sucede porque básicamente no estamos en una TTY, podemos comprobarlo de la siguiente forma:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/ttyOverHTTP/third-webserver.png&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/ttyOverHTTP/third-webserver.png&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Entonces bien, ¿qué hacemos en estos casos?, porque si nos entabláramos una Reverse Shell obviamente ya todo estaría hecho, ¿pero y si por iptables hay ciertas reglas configuradas tanto por ipv4 como por ipv6 que impiden conexiones salientes para entablarnos nuestra conexión?.&lt;/p&gt;
@@ -8572,7 +8572,7 @@ k4lelv@parrot:~# aircrack-ng &amp;lt;archivoPCAP&amp;gt;
 &lt;p&gt;Como podréis comprobar, tenemos una TTY completamente interactiva, pudiendo hacer todo lo que haríamos desde consola pero gestionado todo a través de una webshell. Y cómo no… no nos hemos entablado una Reverse Shell, buena esa.&lt;/p&gt;
 
 &lt;p&gt;Si presionáis la tecla &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl+C&lt;/code&gt;, se eliminarán todos los ficheros temporales del sistema víctima creados para gestionar la sesión, limpiando así el rastro que como atacantes estamos dejando bajo la ruta &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/dev/shm/&lt;/code&gt;.&lt;/p&gt;</content><author><name>k4lelv</name><email>s4vipriv@gmail.com</email></author><category term="Python" /><category term="Web Exploiting" /><category term="Herramientas" /><summary type="html">Utilidad en Python para obtener una TTY totalmente interactiva mediante explotación web sin necesidad de entablarse una Reverse Shell.</summary></entry><entry><title type="html">Canal encubierto en WhatsApp</title><link href="http://localhost:4000/canal-encubierto-whatsapp/" rel="alternate" type="text/html" title="Canal encubierto en WhatsApp" /><published>2020-02-03T00:00:00+00:00</published><updated>2020-02-03T00:00:00+00:00</updated><id>http://localhost:4000/canal-encubierto-whatsapp</id><content type="html" xml:base="http://localhost:4000/canal-encubierto-whatsapp/">&lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-canal-encubierto/whatsapp-banner.jpeg&quot; width=&quot;500&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-canal-encubierto/whatsapp-banner.jpeg&quot; width=&quot;500&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;En el siguiente artículo, os muestro una forma de mantener conversaciones encubiertas sin que quede registro en el historial de conversaciones de WhatsApp. De esta forma, dos personas pueden mantener una conversación mediante la lectura de logs a tiempo de escritura sin necesidad de enviar el mensaje.&lt;/p&gt;
@@ -8588,7 +8588,7 @@ k4lelv@parrot:~# aircrack-ng &amp;lt;archivoPCAP&amp;gt;
 &lt;/ul&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-canal-encubierto/page-herokuapp.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-canal-encubierto/page-herokuapp.jpg&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Entonces bien, ¿cómo hacemos?, pues fijaros. Una de las utilidades de heroku es el comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;heroku logs -t&lt;/code&gt; aplicado desde consola, donde podemos visualizar las peticiones a tiempo real en formato log que se están realizando contra el servidor. Para el que no cuente con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;heroku&lt;/code&gt; instalado en el sistema, podéis aplicar el comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;snap install heroku --classic&lt;/code&gt; y ya lo tendríais.&lt;/p&gt;
@@ -8662,13 +8662,13 @@ k4lelv@parrot:~# aircrack-ng &amp;lt;archivoPCAP&amp;gt;
 &lt;p&gt;Lo único que tenéis que hacer es lo siguiente: Abrid una conversación en WhatsApp con alguno de vuestros contactos, haced como si fuerais a enviar un mensaje a vuestro compañero escribiendo la dirección URL (en este caso la mía como PoC) &lt;a href=&quot;http://k4lelv.herokuapp.com/&quot;&gt;http://k4lelv.herokuapp.com/&lt;/a&gt; y posteriormente escribid vuestro mensaje pegado a la barra &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;, por ejemplo:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-canal-encubierto/whatsapp-victor.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-canal-encubierto/whatsapp-victor.jpg&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Inmediatamente tras introducir los nuevos caracteres después de la barra &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;, empezaréis a ver desde el &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;heroku logs&lt;/code&gt; a tiempo real los caracteres que se están escribiendo, sin enviar el mensaje a nuestro contacto:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-canal-encubierto/logs-heroku.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/whatsapp-canal-encubierto/logs-heroku.jpg&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;De hecho si os fijáis, se puede considerar también un posible &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IP Disclosure&lt;/code&gt;, dado que podemos ver direcciones IP internas de WhatsApp:&lt;/p&gt;
@@ -8690,19 +8690,19 @@ k4lelv@parrot:~# aircrack-ng &amp;lt;archivoPCAP&amp;gt;
 &lt;p&gt;Lo mismo pasaría con el resto de caracteres, por cada caracter que introducimos, es un &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GET&lt;/code&gt; que se aplica hacia el servidor, lo que hace que si estamos a la escucha desde el lado del servidor atendiendo a los logs veamos esas peticiones entrantes.&lt;/p&gt;
 
 &lt;p&gt;Esto por defecto no sólo pasa en WhatsApp, también ocurre en Twitter, Telegram y otras plataformas.&lt;/p&gt;</content><author><name>k4lelv</name><email>s4vipriv@gmail.com</email></author><category term="WhatsApp" /><category term="Canales Encubiertos" /><summary type="html">En el siguiente artículo, os muestro una forma de mantener conversaciones encubiertas sin que quede registro en el historial de conversaciones de WhatsApp. De esta forma, dos personas pueden mantener una conversación mediante la lectura de logs a tiempo de escritura sin necesidad de enviar el mensaje.</summary></entry><entry><title type="html">h-c0n 2020 - evilTrust (Herramienta Ofensiva)</title><link href="http://localhost:4000/evil-trust/" rel="alternate" type="text/html" title="h-c0n 2020 - evilTrust (Herramienta Ofensiva)" /><published>2020-02-02T00:00:00+00:00</published><updated>2020-02-02T00:00:00+00:00</updated><id>http://localhost:4000/evil-trust</id><content type="html" xml:base="http://localhost:4000/evil-trust/">&lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/evil.png&quot; width=&quot;200&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/evil.png&quot; width=&quot;200&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Recientemente estuve en la &lt;strong&gt;h-c0n&lt;/strong&gt; presentando la herramienta &lt;a href=&quot;https://github.com/k4lelv/evilTrust&quot;&gt;evilTrust&lt;/a&gt;. Antes que nada quiero agradecer a los organizadores del evento por invitarme y a todos los presentes por la gran acogida, lo pasamos entre todos bastante bien.&lt;/p&gt;
 
 &lt;div class=&quot;row&quot;&gt;
   &lt;div class=&quot;columns&quot;&gt;
-    &lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/Photo5.png&quot; alt=&quot;Snow&quot; style=&quot;width:30%&quot; /&gt;
-    &lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/Photo4.png&quot; alt=&quot;Forest&quot; style=&quot;width:37%&quot; /&gt;
-    &lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/Photo2.png&quot; alt=&quot;Mountains&quot; style=&quot;width:30%&quot; /&gt;
-    &lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/Photo3.png&quot; alt=&quot;Mountains&quot; style=&quot;width:30%&quot; /&gt;
-    &lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/Photo1.png&quot; alt=&quot;Mountains&quot; style=&quot;width:34%&quot; /&gt;
-    &lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/Photo6.png&quot; alt=&quot;Mountains&quot; style=&quot;width:34%&quot; /&gt;
+    &lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/Photo5.png&quot; alt=&quot;Snow&quot; style=&quot;width:30%&quot; /&gt;
+    &lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/Photo4.png&quot; alt=&quot;Forest&quot; style=&quot;width:37%&quot; /&gt;
+    &lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/Photo2.png&quot; alt=&quot;Mountains&quot; style=&quot;width:30%&quot; /&gt;
+    &lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/Photo3.png&quot; alt=&quot;Mountains&quot; style=&quot;width:30%&quot; /&gt;
+    &lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/Photo1.png&quot; alt=&quot;Mountains&quot; style=&quot;width:34%&quot; /&gt;
+    &lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/Photo6.png&quot; alt=&quot;Mountains&quot; style=&quot;width:34%&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;
@@ -8985,60 +8985,60 @@ Para los interesados, deciros que tenéis la charla disponible en el siguiente e
 
 &lt;p&gt;Configuramos las características de nuestro AP:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_one.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/step_one.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Definimos la plantilla a utilizar:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_two.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/step_two.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Quedamos a la espera de que alguna víctima se conecte a nuestro AP para visualizar credenciales introducidas:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_three.png&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/step_three.png&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;La víctima ve que hay una WiFi gratis disponible a su alcance y se conecta:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_four.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/step_four.jpg&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Tras la asociación al AP, se abre el navegador de manera automática solicitando las credenciales de acceso a la plataforma para continuar navegando:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_five.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/step_five.jpg&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;La víctima introduce sus credenciales para poder continuar navegando:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_six.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/step_six.jpg&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;El atacante visualiza las credenciales introducidas:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_seven.png&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/step_seven.png&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;La víctima es redirigida al portal del segundo factor de autenticación de la plataforma:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_eight.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/step_eight.jpg&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;El atacante valida las credenciales de la víctima desde otro navegador y como esta utiliza segundo factor de autenticación, se envía un SMS a la víctima, introduciendo posteriormente su código en la plantilla:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_nine.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/step_nine.jpg&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;El atacante recibe desde consola el código y posteriormente accede a su cuenta:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/evil-trust/step_ten.png&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/evil-trust/step_ten.png&quot; /&gt;
 &lt;/p&gt;</content><author><name>k4lelv</name><email>s4vipriv@gmail.com</email></author><category term="GitHub" /><category term="Bash" /><category term="Herramientas" /><summary type="html">Recientemente estuve en la h-c0n presentando la herramienta evilTrust. En este artículo, comento la utilidad de la herramienta para todos aquellos que la quieran probar. Gracias a los organizadores del evento por invitarme y a todos los presentes por la gran acogida.</summary></entry><entry><title type="html">Europa - Hack The Box</title><link href="http://localhost:4000/europa-hackthebox/" rel="alternate" type="text/html" title="Europa - Hack The Box" /><published>2020-01-31T00:00:00+00:00</published><updated>2020-01-31T00:00:00+00:00</updated><id>http://localhost:4000/europa-hackthebox</id><content type="html" xml:base="http://localhost:4000/europa-hackthebox/">&lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/htb-writeup-europa/europa_logo.png&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/htb-writeup-europa/europa_logo.png&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Una máquina muy interesante la cual resolvemos en mi canal de YouTube. En este caso, os comparto el script &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Autopwn&lt;/code&gt; que nos habíamos configurado en Python, donde tras su ejecución se nos automatiza la intrusión y la escalada de privilegios mediante el uso de la librería pwn.&lt;/p&gt;
@@ -9155,7 +9155,7 @@ Para los interesados, deciros que tenéis la charla disponible en el siguiente e
  &lt;span class=&quot;n&quot;&gt;shell&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;interactive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 
  &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>k4lelv</name><email>s4vipriv@gmail.com</email></author><category term="Sqli" /><category term="Web Exploiting" /><category term="Privilege Escalation" /><category term="Python" /><category term="Pentesting" /><summary type="html">Una máquina muy interesante la cual resolvemos en mi canal de YouTube. En este caso, os comparto el script `Autopwn` que nos habíamos configurado en Python, donde tras su ejecución se nos automatiza la intrusión y la escalada de privilegios mediante el uso de la librería pwn.</summary></entry><entry><title type="html">FastTcpScan - Go</title><link href="http://localhost:4000/fasttcpscan-go/" rel="alternate" type="text/html" title="FastTcpScan - Go" /><published>2020-01-31T00:00:00+00:00</published><updated>2020-01-31T00:00:00+00:00</updated><id>http://localhost:4000/fasttcpscan-go</id><content type="html" xml:base="http://localhost:4000/fasttcpscan-go/">&lt;p&gt;&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/fasttcpscan-go/golang-go.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>k4lelv</name><email>s4vipriv@gmail.com</email></author><category term="Sqli" /><category term="Web Exploiting" /><category term="Privilege Escalation" /><category term="Python" /><category term="Pentesting" /><summary type="html">Una máquina muy interesante la cual resolvemos en mi canal de YouTube. En este caso, os comparto el script `Autopwn` que nos habíamos configurado en Python, donde tras su ejecución se nos automatiza la intrusión y la escalada de privilegios mediante el uso de la librería pwn.</summary></entry><entry><title type="html">FastTcpScan - Go</title><link href="http://localhost:4000/fasttcpscan-go/" rel="alternate" type="text/html" title="FastTcpScan - Go" /><published>2020-01-31T00:00:00+00:00</published><updated>2020-01-31T00:00:00+00:00</updated><id>http://localhost:4000/fasttcpscan-go</id><content type="html" xml:base="http://localhost:4000/fasttcpscan-go/">&lt;p&gt;&lt;img src=&quot;https://k4lelv.github.io/assets/images/fasttcpscan-go/golang-go.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;En el siguiente artículo os comparto la herramienta &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FastTcpScan&lt;/code&gt; que nos desarrollamos en la máquina &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Hawk&lt;/code&gt; de la plataforma &lt;a href=&quot;https://hackthebox.eu&quot;&gt;HackTheBox&lt;/a&gt;. Esta herramienta consiste en un escáner que permite detectar de forma rápida y precisa los puertos TCP que una máquina tiene abiertos.&lt;/p&gt;
 
@@ -9355,7 +9355,7 @@ Para los interesados, deciros que tenéis la charla disponible en el siguiente e
 		&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>k4lelv</name><email>s4vipriv@gmail.com</email></author><category term="TCP Scan" /><category term="Go Golang" /><summary type="html">En el siguiente artículo os comparto la herramienta `FastTcpScan` que nos desarrollamos en la máquina `Hawk` de la plataforma [HackTheBox](https://hackthebox.eu). Esta herramienta consiste en un escáner que permite detectar de forma rápida y precisa los puertos TCP que una máquina tiene abiertos.</summary></entry><entry><title type="html">Archivos de configuración de Bspwm</title><link href="http://localhost:4000/bspwm-configuration-files/" rel="alternate" type="text/html" title="Archivos de configuración de Bspwm" /><published>2020-01-30T00:00:00+00:00</published><updated>2020-01-30T00:00:00+00:00</updated><id>http://localhost:4000/bspwm-configuration-files</id><content type="html" xml:base="http://localhost:4000/bspwm-configuration-files/">&lt;p&gt;&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/bspwm/bspwm-background.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>k4lelv</name><email>s4vipriv@gmail.com</email></author><category term="TCP Scan" /><category term="Go Golang" /><summary type="html">En el siguiente artículo os comparto la herramienta `FastTcpScan` que nos desarrollamos en la máquina `Hawk` de la plataforma [HackTheBox](https://hackthebox.eu). Esta herramienta consiste en un escáner que permite detectar de forma rápida y precisa los puertos TCP que una máquina tiene abiertos.</summary></entry><entry><title type="html">Archivos de configuración de Bspwm</title><link href="http://localhost:4000/bspwm-configuration-files/" rel="alternate" type="text/html" title="Archivos de configuración de Bspwm" /><published>2020-01-30T00:00:00+00:00</published><updated>2020-01-30T00:00:00+00:00</updated><id>http://localhost:4000/bspwm-configuration-files</id><content type="html" xml:base="http://localhost:4000/bspwm-configuration-files/">&lt;p&gt;&lt;img src=&quot;https://k4lelv.github.io/assets/images/bspwm/bspwm-background.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Para el que no sepa de lo que estamos hablando, toda la configuración que se define en este artículo es la detallada en el siguiente vídeo mi canal de YouTube:&lt;/p&gt;
 
@@ -9761,7 +9761,7 @@ polybar example &amp;amp;
 
 &lt;p&gt;El archivo de configuración del &lt;strong&gt;Polybar&lt;/strong&gt; no es necesario que lo comparta por aquí porque básicamente son 2 líneas las que hay que cambiar y no debería de dar fallos.&lt;/p&gt;
 
-&lt;p&gt;¡Espero que de esta forma tengáis menos problemas!&lt;/p&gt;</content><author><name>k4lelv</name><email>s4vipriv@gmail.com</email></author><category term="Bspwm" /><category term="Sxhkd" /><category term="Compton" /><category term="Polybar" /><category term="Powerlevel10k" /><summary type="html">En este artículo comparto algunos de los archivos que creamos en el vídeo 'Cómo configurar un buen entorno de trabajo en Linux' de mi canal de YouTube.</summary></entry><entry><title type="html">Bypassing de validación en Chatroulette</title><link href="http://localhost:4000/chatroulette-bypass/" rel="alternate" type="text/html" title="Bypassing de validación en Chatroulette" /><published>2020-01-30T00:00:00+00:00</published><updated>2020-01-30T00:00:00+00:00</updated><id>http://localhost:4000/chatroulette-bypass</id><content type="html" xml:base="http://localhost:4000/chatroulette-bypass/">&lt;p&gt;&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/chatroulette-main.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;¡Espero que de esta forma tengáis menos problemas!&lt;/p&gt;</content><author><name>k4lelv</name><email>s4vipriv@gmail.com</email></author><category term="Bspwm" /><category term="Sxhkd" /><category term="Compton" /><category term="Polybar" /><category term="Powerlevel10k" /><summary type="html">En este artículo comparto algunos de los archivos que creamos en el vídeo 'Cómo configurar un buen entorno de trabajo en Linux' de mi canal de YouTube.</summary></entry><entry><title type="html">Bypassing de validación en Chatroulette</title><link href="http://localhost:4000/chatroulette-bypass/" rel="alternate" type="text/html" title="Bypassing de validación en Chatroulette" /><published>2020-01-30T00:00:00+00:00</published><updated>2020-01-30T00:00:00+00:00</updated><id>http://localhost:4000/chatroulette-bypass</id><content type="html" xml:base="http://localhost:4000/chatroulette-bypass/">&lt;p&gt;&lt;img src=&quot;https://k4lelv.github.io/assets/images/chatroulette-bypass/chatroulette-main.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Hoy os vengo a mostrar un bypassing de lo más absurdo en la plataforma de Chatroulette. Supongo que sabréis que a la hora de entrar en Chatroulette se lleva a cabo una especie de validación, donde te piden que sonrías para que tu cara quede registrada en el sistema y posteriormente puedas acceder. Pues atentos a la jugada.&lt;/p&gt;
 
@@ -9770,7 +9770,7 @@ polybar example &amp;amp;
 &lt;p&gt;Resulta que estaba yo tan tranquilo dispuesto a buscar a &lt;strong&gt;Julio Ureña&lt;/strong&gt; en la plataforma de Chatroulette, cuando vi que para empezar a conectar con gente se me solicitaba la siguiente información:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/smile.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/chatroulette-bypass/smile.jpg&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Al parecer debes de sonreir frente a la cámara para ya comenzar a usar el servicio. Esta fase me interesó mucho, ¿de qué forma se hace la validación?… es lo que mi mente inquieta se preguntaba.&lt;/p&gt;
@@ -9778,13 +9778,13 @@ polybar example &amp;amp;
 &lt;p&gt;Dado que &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Burpsuite&lt;/code&gt; siempre responde a estas preguntas, probé a tirar de nuestro querido proxy para ver cómo viajaban las consultas. Desde que presionas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Start&lt;/code&gt;, empiezan a viajar una serie de WebSockets con valores que identifican entre otras cosas nuestro &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;UserToken&lt;/code&gt;:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/burp-first.png&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/chatroulette-bypass/burp-first.png&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Justo en el momento en el que se comienza a buscar una sonrisa del lado de nuestra cámara, se inicia un proceso de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ClientPing&lt;/code&gt;, bajo el cual se saca un Snapshot para posteriormente del lado del servidor interpretar la imagen :&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/clientping.png&quot; /&gt;&amp;gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/chatroulette-bypass/clientping.png&quot; /&gt;&amp;gt;
 &lt;/p&gt;
 
 &lt;h2 id=&quot;checking-absurdo&quot;&gt;Checking absurdo&lt;/h2&gt;
@@ -9792,7 +9792,7 @@ polybar example &amp;amp;
 &lt;p&gt;La gran fase de validación viene ahora. Si presionamos varias veces en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Forward&lt;/code&gt;, de pronto podremos notar algo que llama mucho la atención:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/base64.png&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/chatroulette-bypass/base64.png&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;La misma pregunta que te estás haciendo es la que me hice yo en su momento, ¿qué demonios es esto?.&lt;/p&gt;
@@ -9809,7 +9809,7 @@ content: PNG image data, 640 x 480, 8-bit/color RGBA, non-interlaced
 &lt;p&gt;Efectivamente, una imagen, ¿y a qué corresponde esta imagen?, a la instantánea que se realiza:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/instantanea-base64.png&quot; /&gt;&amp;gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/chatroulette-bypass/instantanea-base64.png&quot; /&gt;&amp;gt;
 &lt;/p&gt;
 
 &lt;h2 id=&quot;bypassing-de-la-sonrisa&quot;&gt;Bypassing de la sonrisa&lt;/h2&gt;
@@ -9817,7 +9817,7 @@ content: PNG image data, 640 x 480, 8-bit/color RGBA, non-interlaced
 &lt;p&gt;¿Cómo hacemos por tanto para bypassear este sistema de validación y no tener que sonreir de nuestro lado para conectar con Julio?, pues bueno… simplemente tendríamos que coger una foto cualquiera de internet en la que salga alguien sonriendo:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/smile-girl.jpeg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/chatroulette-bypass/smile-girl.jpeg&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;La pasamos a base64 desde consola:&lt;/p&gt;
@@ -9833,7 +9833,7 @@ content: PNG image data, 640 x 480, 8-bit/color RGBA, non-interlaced
 &lt;p&gt;Tras hacerlo, la validación se habrá aplicado y ya podremos empezar a conectar con los demás sin haber sido necesario de nuestro lado sonreir y mostrar el rostro:&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/chatroulette-bypass/man.jpg&quot; /&gt;
+&lt;img src=&quot;https://k4lelv.github.io/assets/images/chatroulette-bypass/man.jpg&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Posteriormente, estuvimos debatiendo este señor y yo la máquina BigHead de HackTheBox, donde me comentaba una vía no intencionada de explotación para acceder al sistema, un grande este señor.&lt;/p&gt;</content><author><name>k4lelv</name><email>s4vipriv@gmail.com</email></author><category term="Chatroulette" /><category term="Burpsuite" /><category term="Bypassing" /><summary type="html">Hoy os vengo a mostrar un bypassing de lo más absurdo en la plataforma de Chatroulette. Supongo que sabréis que a la hora de entrar en Chatroulette se lleva a cabo una especie de validación, donde te piden que sonrías para que tu cara quede registrada en el sistema y posteriormente puedas acceder. Pues atentos a la jugada.</summary></entry></feed>

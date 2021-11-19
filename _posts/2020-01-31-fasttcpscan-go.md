@@ -5,7 +5,7 @@ excerpt: "En el siguiente artículo os comparto la herramienta `FastTcpScan` que
 date: 2020-01-31
 classes: wide
 header:
-  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/fasttcpscan-go/golang-go.png
+  teaser: https://k4lelv.github.io/assets/images/fasttcpscan-go/golang-go.png
   teaser_home_page: true
 categories:
   - Scripting
@@ -14,7 +14,7 @@ tags:
   - Go Golang
 ---
 
-![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/fasttcpscan-go/golang-go.png)
+![](https://k4lelv.github.io/assets/images/fasttcpscan-go/golang-go.png)
 
 En el siguiente artículo comparto la herramienta `FastTcpScan` que desarrolle en la máquina `Hawk` de la plataforma [HackTheBox](https://hackthebox.eu). Esta herramienta consiste en un escáner que permite detectar de forma rápida y precisa los puertos TCP que una máquina tiene abiertos.
 

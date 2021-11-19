@@ -5,7 +5,7 @@ excerpt: "En este artículo, muestro cómo es posible manipular los mensajes de 
 date: 2020-02-10
 classes: wide
 header:
-  teaser: https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/whatsapp.jpg
+  teaser: https://k4lelv.github.io/assets/images/whatsapp-fake-messages/whatsapp.jpg
   teaser_home_page: true
 categories:
   - Research
@@ -16,7 +16,7 @@ tags:
 ---
 
 <center>
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/whatsapp.jpg">
+<img src="https://k4lelv.github.io/assets/images/whatsapp-fake-messages/whatsapp.jpg">
 </center>
 
 ## ¿Cómo reproducir este bug?
@@ -26,28 +26,28 @@ Antes que nada, vamos a darle los buenos créditos al señor [@RiftWhiteHat](htt
 Comenzamos presionando la combinación `Ctrl+Shift+C`. Posteriormente, nos dirigimos a la pestaña `Sources` desde WhatsApp Web:
 
 <center>
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step1.jpg">
+<img src="https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step1.jpg">
 </center>
 
 <br>
 Una vez hecho, nos iremos a la pestaña `Search` situada en la zona inferior y buscaremos la cadena `Promise.callSynchronously(function()`
 
 <center>
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step2.jpg">
+<img src="https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step2.jpg">
 </center>
 
 <br>
 Veremos que se produce un match. Haremos click en el resultado obtenido y posteriormente en la zona superior seleccionamos el modo de visión `Pretty Print` para que no nos sangren los ojos:
 
 <center>
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step3.jpg">
+<img src="https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step3.jpg">
 </center>
 
 <br>
 Ya en este punto, presionaremos la combinación de teclas `Ctrl+F` y buscaremos nuevamente por la cadena `Promise.callSynchronously(function()`. En esta ocasión, buscaremos el segundo match que se produzca:
 
 <center>
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step4.jpg">
+<img src="https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step4.jpg">
 </center>
 
 <br>
@@ -55,7 +55,7 @@ Ya en este punto, presionaremos la combinación de teclas `Ctrl+F` y buscaremos 
 Posteriormente, establecemos un `Breakpoint` en la sección `var t = e.id;`, haciendo para ello click en el número de la línea:
 
 <center>
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step5.jpg">
+<img src="https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step5.jpg">
 </center>
 
 <br>
@@ -99,7 +99,7 @@ Existen montón de valores que se pueden alterar, los cuales han llegado incluso
 Este último en concreto ha sido parcheado, sin embargo sólo en el ámbito grupal (grupos de WhatsApp), en el sentido de que ya no afecta a los componentes de un grupo, sino al propio emisor del mensaje especialmente diseñado:
 
 <center>
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step12.jpg" width="400">
+<img src="https://k4lelv.github.io/assets/images/whatsapp-fake-messages/step12.jpg" width="400">
 </center>
 
 <br>
