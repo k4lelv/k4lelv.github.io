@@ -6,7 +6,7 @@ excerpt: "Uno de los comandos mas útiles en Linux es NTP (Network Time Protocol
 date: 2021-11-10
 classes: wide
 header:
-    teaser: #https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/slae32.png
+    teaser: https://images.unsplash.com/photo-1499686934070-fde9d797e48c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
 categories:
     - utilidades
     - linux
