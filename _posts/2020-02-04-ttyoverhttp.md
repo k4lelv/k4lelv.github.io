@@ -18,7 +18,7 @@ tags:
 
 ![](https://k4lelv.github.io/assets/images/ttyOverHTTP/linux-banner.png)
 
-Podéis encontrar esta herramienta en el siguiente enlace:
+Podes encontrar esta herramienta en el siguiente enlace autor (s4vitar):
 
 * [https://github.com/k4lelv/ttyoverhttp](https://github.com/s4vitar/ttyoverhttp)
 
