@@ -2,7 +2,7 @@
 layout: single
 title: Ejmeplos sencillos para practicar en C++
 excerpt: "Recordando los viejos tiempos, aqui te muestro algunos ejercicios buenos para practicar logica de programacion en el lenguaje de C++, Veamos de cuantos eres capaz de resolver"
-date: 2020-02-10
+date: 2021-11-19
 classes: wide
 header:
   teaser: ../assets/images/c++-examples/vs-code-in-a-computer
