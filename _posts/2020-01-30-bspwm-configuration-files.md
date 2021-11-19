@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Archivos de configuración de Bspwm
-excerpt: "En este artículo comparto algunos de los archivos que creamos en el vídeo 'Cómo configurar un buen entorno de trabajo en Linux' de mi canal de YouTube."
+excerpt: "En este artículo comparto algunos de los archivos que cree."
 date: 2020-01-30
 classes: wide
 header:
@@ -21,13 +21,8 @@ tags:
 
 ![](https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/bspwm/bspwm-background.jpg)
 
-Para el que no sepa de lo que estamos hablando, toda la configuración que se define en este artículo es la detallada en el siguiente vídeo mi canal de YouTube:
 
-- [Cómo configurar un buen entorno de trabajo en Linux](https://www.youtube.com/watch?v=MF4qRSedmEs)
-
-Algunos de vosotros me habéis contactado pidiéndome que subiera los archivos de configuración a algún sitio, dado que a pesar de seguir mis pasos, os aparecían errores en ciertas cosas.
-
-Para el que lo quiera tomar en consideración, por aquí os dejo las especificaciones de mi sistema operativo:
+Para el que lo quiera tomar en consideración, por aquí dejo las especificaciones de mi sistema operativo:
 
 ```bash
 ┌─[k4lelv@parrot]─[~]
@@ -430,4 +425,4 @@ echo "Polybar launched..."
 
 El archivo de configuración del **Polybar** no es necesario que lo comparta por aquí porque básicamente son 2 líneas las que hay que cambiar y no debería de dar fallos.
 
-¡Espero que de esta forma tengáis menos problemas!
+¡Espero que de esta forma tengan menos problemas!

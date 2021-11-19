@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Falsificación de mensajes en WhatsApp
-excerpt: "En este artículo, os muestro cómo es posible manipular los mensajes de otras personas en WhatsApp, explotando para ello un bug que a día de hoy sigue funcionando."
+excerpt: "En este artículo, muestro cómo es posible manipular los mensajes de otras personas en WhatsApp, explotando para ello un bug que a día de hoy sigue funcionando."
 date: 2020-02-10
 classes: wide
 header:
@@ -62,55 +62,31 @@ Posteriormente, establecemos un `Breakpoint` en la sección `var t = e.id;`, hac
 
 Ahora, lo que haremos será lo siguiente. Nos iremos a una conversación cualquiera con uno de nuestros compañeros, seleccionaremos cualquier mensaje que nos haya enviado y le daremos a `Responder` para hacer mención a ese comentario.
 
-Escribiremos como respuesta lo que queramos, yo en este caso he escrito `No sé si conocerás el canal de k4lelv`. Tras enviar el mensaje, veremos que alcanzamos el `Breakpoint` y que el mensaje no llega a enviarse:
-
-<center>
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step6.jpg">
-</center>
+Escribiremos como respuesta lo que queramos, yo en este caso he escrito `No sé si conocerás a k4lelv`. Tras enviar el mensaje, veremos que alcanzamos el `Breakpoint` y que el mensaje no llega a enviarse
 
 <br>
 
-Si nos vamos a la pestaña `Console` dentro de la pestaña `Sources`, veremos que en este preciso instante podemos desglosar `e`, pudiendo así ver todos los atributos que hacen referencia a la conversación que estamos llevando a cabo:
-
-<center>
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step7.jpg">
-</center>
+Si nos vamos a la pestaña `Console` dentro de la pestaña `Sources`, veremos que en este preciso instante podemos desglosar `e`, pudiendo así ver todos los atributos que hacen referencia a la conversación que estamos llevando a cabo
 
 <br>
 
 En este caso, muestro sólo una porción para no compartir información privilegiada.
 
-Ya en este punto, podremos manipular el mensaje de mención al que estamos respondiendo de la siguiente forma:
-
-<center>
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step8.jpg">
-</center>
+Ya en este punto, podremos manipular el mensaje de mención al que estamos respondiendo.
 
 <br>
 
-Lo único que tendremos que hacer posteriormente es darle al `Play` para que el mensaje siga su flujo y salgamos del `Breakpoint`:
-
-<center>
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step9.jpg">
-</center>
+Lo único que tendremos que hacer posteriormente es darle al `Play` para que el mensaje siga su flujo y salgamos del `Breakpoint`
 
 <br>
 
 Una vez hecho, podremos ver lo siguiente:
 
-<center>
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step10.jpg">
-</center>
-
 <br>
 
 Hemos falsificado el mensaje al cual hacemos mención, haciendo creer al destinatario que nos ha escrito ese mensaje cuando no es así.
 
-Todo esto desde WhatsApp web, y te preguntarás... ¿cómo se ve desde el móvil?, pues se vería exactamente igual:
-
-<center>
-<img src="https://k4lelv.github.io/k4lelvBlog.github.io/assets/images/whatsapp-fake-messages/step11.jpg" width="400">
-</center>
+Todo esto desde WhatsApp web, y te preguntarás... ¿cómo se ve desde el móvil?, pues se vería exactamente igual
 
 <br>
 
@@ -128,4 +104,4 @@ Este último en concreto ha sido parcheado, sin embargo sólo en el ámbito grup
 
 <br>
 
-¡Dejo en vuestras manos la investigación para que encontréis cosas chulas!
+¡Dejo en sus manos la investigación para que encuentre cosas brutales!

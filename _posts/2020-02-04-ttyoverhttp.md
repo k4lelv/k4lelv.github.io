@@ -20,7 +20,7 @@ tags:
 
 Podéis encontrar esta herramienta en el siguiente enlace:
 
-* [https://github.com/k4lelv/ttyoverhttp](https://github.com/k4lelv/ttyoverhttp)
+* [https://github.com/k4lelv/ttyoverhttp](https://github.com/s4vitar/ttyoverhttp)
 
 ## ¿Qué es ttyOverHTTP?
 

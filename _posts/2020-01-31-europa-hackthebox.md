@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Europa - Hack The Box
-excerpt: "Una máquina muy interesante la cual resolvemos en mi canal de YouTube. En este caso, os comparto el script `Autopwn` que nos habíamos configurado en Python, donde tras su ejecución se nos automatiza la intrusión y la escalada de privilegios mediante el uso de la librería pwn."
+excerpt: "Una máquina muy interesante. En este caso, comparto el script `Autopwn` que había configurado en Python, donde tras su ejecución se nos automatiza la intrusión y la escalada de privilegios mediante el uso de la librería pwn."
 date: 2020-01-31
 classes: wide
 header:
