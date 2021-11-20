@@ -74,7 +74,7 @@ int main (){
 }
 ```
 
-## El sistema de calificación americano (de Estados Unidos) se suele calcular de acuerdo al siguiente cuadro:
+* ## El sistema de calificación americano (de Estados Unidos) se suele calcular de acuerdo al siguiente cuadro:
 <p align="center">
 <img src="https://k4lelv.github.io/assets/images/c++-examples/tablaCalificaciones.png">
 </p>
@@ -137,7 +137,7 @@ int main(){
 			case 2:
 				/*Mostramos el pequeño catalogo de las calificaciones y sus equivalencias 
                 entre ambos sistemas de calificacion */
-                
+
 				cout <<"\n############################################";
 				cout <<"\nSistema de Calificaciones de EEUU\n";
 				cout <<"\nMayor o Igual a 90 --------------------- A";
