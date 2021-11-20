@@ -16,7 +16,7 @@ tags:
 
 ![](https://k4lelv.github.io/assets/images/c++-examples/vs-code-in-a-computer.jpg)
 
-## Lista de ejercicios
+# Lista de ejercicios
 
 Antes que nada, quiero recordar que estos ejercicios son sacado de un libro de texto que no recuerdo muy bien xd, si lo encuentro, mas tarde, les dejaré un link por si lo quieren ir a ver mas detalladamente.
 
@@ -24,7 +24,7 @@ Comenzamos abriendo algun editor de texto a tu gusto, en este caso, yo trabajar�
 
 El primer Ejercicio nos dice:
 
-* Calcular los N primeros multiplos de 4 (4 inclusive), donde N es un valor introducido por teclado.
+## Calcular los N primeros multiplos de 4 (4 inclusive), donde N es un valor introducido por teclado.
 
 ```c++
 //Calculando los n primeros numeros multiplos de 4
@@ -73,7 +73,7 @@ int main (){
 }
 ```
 
-* El sistema de calificación americano (de Estados Unidos) se suele calcular de acuerdo al siguiente cuadro:
+## El sistema de calificación americano (de Estados Unidos) se suele calcular de acuerdo al siguiente cuadro:
 <p align="center">
 <img src="https://k4lelv.github.io/assets/images/c++-examples/tablaCalificaciones.png">
 </p>
@@ -156,16 +156,16 @@ int main(){
 ```
 
 
-* Se pretende leer todos los empleados de una empresa situados en un archivo `EMPRESA` y a la terminación de la lectura del archivo se debe visualizar un mensaje <<existen trabajadores mayores de 65 años en un número de ...>> y el número de trabajadores mayores de 65 años.
+## Se pretende leer todos los empleados de una empresa situados en un archivo `EMPRESA` y a la terminación de la lectura del archivo se debe visualizar un mensaje <<existen trabajadores mayores de 65 años en un número de ...>> y el número de trabajadores mayores de 65 años.
 
 
-* Diseñar un algoritmo para calucular el máximo común divisor de cuatro números basado en un subalgoritmo función mcd (máximo común divisor de dos números).
+## Diseñar un algoritmo para calucular el máximo común divisor de cuatro números basado en un subalgoritmo función mcd (máximo común divisor de dos números).
 
 
-* Diseñar un algoritmo que calcule el mayor valor de una lista L de N elementos
+## Diseñar un algoritmo que calcule el mayor valor de una lista L de N elementos
 
 
-* Realizar un algoritmo que permute tres números enteros. n1, n2, n3 en orden creciente.
+## Realizar un algoritmo que permute tres números enteros. n1, n2, n3 en orden creciente.
 
 
-* Implementar una clase `Automóvil` (carro) dentro de una jerarquía de herencia múltiple. Considere que, además de ser un `Vehículo` es tambien una comodidadm un símbolo de estado social, un modo de transporte, etc. `Automóvil` debe tener al menos tres clases base y al menos 3 clases derivadas.
+## Implementar una clase `Automóvil` (carro) dentro de una jerarquía de herencia múltiple. Considere que, además de ser un `Vehículo` es tambien una comodidadm un símbolo de estado social, un modo de transporte, etc. `Automóvil` debe tener al menos tres clases base y al menos 3 clases derivadas.
