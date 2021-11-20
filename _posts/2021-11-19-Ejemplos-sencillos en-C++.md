@@ -164,7 +164,134 @@ int main(){
 - - -
 ## Se pretende leer todos los empleados de una empresa situados en un archivo `EMPRESA` y a la terminación de la lectura del archivo se debe visualizar un mensaje <<existen trabajadores mayores de 65 años en un número de ...>> y el número de trabajadores mayores de 65 años.
 
-<a href="https://drive.google.com/file/d/1U9p4Oa2G0M14Qgj96Wuf-ViVoQtg3Hy9/view?usp=sharing" target="_blank">Descarga EMPRESA.txt</a>
+Para poder empezar a resolverlo necesitamos este archivo que le pondremos de nombre `EMPRESA`, no es mas que un archivo `.txt` en el cual estará una base de datos de Empleados con las siguientes especificaciones: `Nombre`, `Apellido`, `Edad`, `Cargo`. Esta lista fue generada gracias a [Mockaroo.com](https://www.mockaroo.com/).
+</br>
+Pero para facilitar el proceso les dejo un link para q se lo descarguen aqui: <a href="https://drive.google.com/file/d/1U9p4Oa2G0M14Qgj96Wuf-ViVoQtg3Hy9/view?usp=sharing" target="_blank">Descarga EMPRESA.txt</a>
+
+Ahora si, estamos listo. `Siiiuuuu`
+
+```c++
+
+//Leer la edad de trabajadores desde un archivo txt llamado EMPRESA
+#include <iostream>
+#include <string.h>
+#include <iomanip>
+#include <sstream>
+#include <vector>
+#include <fstream>
+#include <cstdlib>
+
+using namespace std;
+
+
+int main(){
+	
+	//Definiendo las variables que ocuparemos para este caso
+	string Nombre, apellido, edad, cargo; //variables del archivo a ocupar (las columnas)
+	vector<string>NAME;
+	vector<string>LASTNAME;
+	vector<int>AGE;
+	vector<string>TITLEJOB;
+	int flag = 0;
+	int cuenta = 0;
+	
+	cout << "-------------------------------------------------------------";
+	cout << "\t\t\t\tMenu de Opciones\n";
+	cout << "1. Visualizar los trabajadores con edad igual a 65 anios\n";
+	cout << "2. Visualizar toda la lista de empleados de 'EMPRESA'\n  -> ";
+	cin >> flag;
+	
+	if(flag == 1){
+		ifstream archivo;
+		archivo.open("EMPRESA.txt",ios::in); //Ahora procedemos a abrir nuestro archivo en modo de lectura solamente
+		
+		//validamos los posibles errores al abrir un archivo
+		if(archivo.fail()){
+			cout <<"Ups, No se pudo abrir el archivo";
+			exit(1);
+		}
+		
+		//numero de lineas
+		int i = 0;
+		
+		while(!archivo.eof()){
+			string linea;
+			getline(archivo,linea);//Para ignorar la primera fila donde se encuentra las columnas
+			
+			//Convertimos las datos de string a entero en el caso de la edad
+			getline(archivo,Nombre, ',');
+			NAME.push_back(Nombre);
+			getline(archivo,apellido,',');
+			LASTNAME.push_back(apellido);
+			getline(archivo,edad,',');
+			AGE.push_back(atoi(edad.c_str())+2);
+			
+			i += 1;
+		}
+		
+		cout << "\n\n########################################################\n\n";
+		archivo.close();//Cerramos el archivo para terminar la ejecucion
+		cout << "--> Numero de empleados total: " << (i-1) << endl;	
+		
+		for(int j = 0; j < i; j++){//Iniciamos a contar el numero de veces en el que el numero 65 se menciona en el archivo
+			
+			if(AGE[j] == 65){
+				cuenta += 1;
+			}
+		}
+		cout << "\n\n--> El numero de empleado con edad de 65 anios es de: " << cuenta << endl;
+		cout << "\n########################################################";
+	}
+	else if(flag == 2){
+		//Abrimos el archivo de texto con los datos
+		ifstream archivo;
+		archivo.open("EMPRESA.txt",ios::in); //Ahora procedemos a abrir nuestro archivo en modo de lectura solamente
+		
+		//validamos los posibles errores al abrir un archivo
+		if(archivo.fail()){
+			cout <<"Ups, No se pudo abrir el archivo";
+			exit(1);
+		}
+		
+		//numero de lineas
+		int i = 0;
+		
+		while(!archivo.eof()){//Le decimos que hasta no termine de leer todo el archivo, haga lo siguiente
+			
+			string linea;
+			getline(archivo,linea);//Para ignorar la primera fila donde se encuentra las columnas
+			
+			getline(archivo,Nombre, ',');
+			NAME.push_back(Nombre);
+			getline(archivo,apellido,',');
+			LASTNAME.push_back(apellido);
+			getline(archivo,edad,',');
+			AGE.push_back(atoi(edad.c_str())+2);
+			getline(archivo,cargo,',');
+			TITLEJOB.push_back(cargo);
+			
+			i += 1;
+		}
+		
+		archivo.close();//Cerramos el archivo para terminar la ejecucion
+		cout << "Numero de empleados total: " << (i-1) << endl;
+		
+		//Visualizamos el archivo en la consola por columnas
+		cout << "Nombres" << "\t" << "Apellidos" << "\t"<< "Edad" << "\t" << "Cargo" << endl;
+		
+		for(int j = 0; j < i; j++){
+			cout << NAME[j] << "\t" << LASTNAME[j] << "\t\t" << AGE[j] << "\t" << TITLEJOB[j] << endl;
+		}
+	}
+	else{
+		cout << "Porfavor elija una opcion del menu....";
+	}
+	
+	return 0;
+}
+
+```
+
 
 - - -
 ## Diseñar un algoritmo para calucular el máximo común divisor de cuatro números basado en un subalgoritmo función mcd (máximo común divisor de dos números).
