@@ -17,6 +17,7 @@ tags:
     - Automatizacion
 
 ---
+
 ![](https://k4lelv.github.io/assets/images/ntpSync/ntpSyncLogo.jpg)
 
 
