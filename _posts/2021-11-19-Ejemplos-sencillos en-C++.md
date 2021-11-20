@@ -40,7 +40,8 @@ int main (){
 	double multiplo = 0;
 	char flag;
 	
-	//Agregamos un loop para que el usuario si desea seguir probando el codigo lo pueda hacer sin necesidad de volverlo a correr
+	/*Agregamos un loop para que el usuario si desea seguir probando el codigo 
+    lo pueda hacer sin necesidad de volverlo a correr */
 	do{
 		//Ingreso de dato
 		cout << "\nCuantos multiplos del numero (4) desea calcular?\n -> ";
@@ -134,7 +135,9 @@ int main(){
 				} while (miniFlag == 's' || miniFlag == 'S');
 				break;
 			case 2:
-				//Mostramos el pequeño catalogo de las calificaciones y sus equivalencias entre ambos sistemas de calificacion
+				/*Mostramos el pequeño catalogo de las calificaciones y sus equivalencias 
+                entre ambos sistemas de calificacion */
+                
 				cout <<"\n############################################";
 				cout <<"\nSistema de Calificaciones de EEUU\n";
 				cout <<"\nMayor o Igual a 90 --------------------- A";
