@@ -5,7 +5,7 @@ excerpt: "Recordando los viejos tiempos, aqui te muestro algunos ejercicios buen
 date: 2020-11-19
 classes: wide
 header:
-  teaser: https://k4lelv.github.io/assets/images/c++-examples/hacker-pc-blue.png
+  teaser: <img loading="lazy" src="/assets/images/c++-examples/hacker-pc-blue.png">
   teaser_home_page: true
 categories:
   - Ejercicios
