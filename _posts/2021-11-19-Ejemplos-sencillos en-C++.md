@@ -165,7 +165,7 @@ int main(){
 ## Se pretende leer todos los empleados de una empresa situados en un archivo `EMPRESA` y a la terminación de la lectura del archivo se debe visualizar un mensaje <<existen trabajadores mayores de 65 años en un número de ...>> y el número de trabajadores mayores de 65 años.
 
 Para poder empezar a resolverlo necesitamos este archivo que le pondremos de nombre `EMPRESA`, no es mas que un archivo `.txt` en el cual estará una base de datos de Empleados con las siguientes especificaciones: `Nombre`, `Apellido`, `Edad`, `Cargo`. Esta lista fue generada gracias a [Mockaroo.com](https://www.mockaroo.com/).
-</br>
+<br>
 Pero para facilitar el proceso les dejo un link para q se lo descarguen aqui: <a href="https://drive.google.com/file/d/1U9p4Oa2G0M14Qgj96Wuf-ViVoQtg3Hy9/view?usp=sharing" target="_blank">Descarga EMPRESA.txt</a>
 
 Ahora si, estamos listo. `Siiiuuuu`
