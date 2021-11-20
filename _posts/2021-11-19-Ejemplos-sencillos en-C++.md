@@ -171,7 +171,6 @@ Pero para facilitar el proceso les dejo un link para q se lo descarguen aqui: <a
 Ahora si, estamos listo. `Siiiuuuu`
 
 ```c++
-
 //Leer la edad de trabajadores desde un archivo txt llamado EMPRESA
 #include <iostream>
 #include <string.h>
@@ -197,7 +196,7 @@ int main(){
 	
 	cout << "-------------------------------------------------------------";
 	cout << "\t\t\t\tMenu de Opciones\n";
-	cout << "1. Visualizar los trabajadores con edad igual a 65 anios\n";
+	cout << "1. Visualizar los trabajadores con edad mayores a 65 anios\n";
 	cout << "2. Visualizar toda la lista de empleados de 'EMPRESA'\n  -> ";
 	cin >> flag;
 	
@@ -235,11 +234,11 @@ int main(){
 		
 		for(int j = 0; j < i; j++){//Iniciamos a contar el numero de veces en el que el numero 65 se menciona en el archivo
 			
-			if(AGE[j] == 65){
+			if(AGE[j] > 65){
 				cuenta += 1;
 			}
 		}
-		cout << "\n\n--> El numero de empleado con edad de 65 anios es de: " << cuenta << endl;
+		cout << "\n\n--> El numero de empleado con edad mayores de 65 anios es de: " << cuenta << endl;
 		cout << "\n########################################################";
 	}
 	else if(flag == 2){
@@ -286,10 +285,9 @@ int main(){
 	else{
 		cout << "Porfavor elija una opcion del menu....";
 	}
-	
+    
 	return 0;
 }
-
 ```
 
 
