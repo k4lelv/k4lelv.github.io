@@ -2,7 +2,7 @@
 layout: single
 title: Ejemplos sencillos para practicar en C++
 excerpt: "Recordando los viejos tiempos, aqui te muestro algunos ejercicios buenos para practicar logica de programacion en el lenguaje de C++, Veamos de cuantos eres capaz de resolver."
-date: 2021-11-19
+date: 2020-11-19
 classes: wide
 header:
   teaser: https://k4lelv.github.io/assets/images/c++-examples/hacker-pc-blue.png
