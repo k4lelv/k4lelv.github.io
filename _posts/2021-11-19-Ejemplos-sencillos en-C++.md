@@ -74,7 +74,9 @@ int main (){
 }
 ```
 
-* ## El sistema de calificación americano (de Estados Unidos) se suele calcular de acuerdo al siguiente cuadro:
+
+=============
+## El sistema de calificación americano (de Estados Unidos) se suele calcular de acuerdo al siguiente cuadro:
 <p align="center">
 <img src="https://k4lelv.github.io/assets/images/c++-examples/tablaCalificaciones.png">
 </p>
@@ -158,6 +160,7 @@ int main(){
 }
 ```
 
+=============
 
 ## Se pretende leer todos los empleados de una empresa situados en un archivo `EMPRESA` y a la terminación de la lectura del archivo se debe visualizar un mensaje <<existen trabajadores mayores de 65 años en un número de ...>> y el número de trabajadores mayores de 65 años.
 
