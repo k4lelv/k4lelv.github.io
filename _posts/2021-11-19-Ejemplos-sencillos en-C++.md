@@ -164,7 +164,7 @@ int main(){
 - - -
 ## Se pretende leer todos los empleados de una empresa situados en un archivo `EMPRESA` y a la terminación de la lectura del archivo se debe visualizar un mensaje <<existen trabajadores mayores de 65 años en un número de ...>> y el número de trabajadores mayores de 65 años.
 
-<a href="https://k4lelv.github.io\assets\images\c++-examples\EMPRESA.txt" target="_blank">''word''</a>
+<a href="https://k4lelv.github.io\assets\images\c++-examples\EMPRESA.txt" target="_blank">Descarga EMPRESA.txt</a>
 
 - - -
 ## Diseñar un algoritmo para calucular el máximo común divisor de cuatro números basado en un subalgoritmo función mcd (máximo común divisor de dos números).
