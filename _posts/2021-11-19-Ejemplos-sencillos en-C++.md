@@ -77,10 +77,9 @@ int main (){
 
 - - -
 ## El sistema de calificación americano (de Estados Unidos) se suele calcular de acuerdo al siguiente cuadro:
-<p align="center">
+<p align="left">
 <img src="https://k4lelv.github.io/assets/images/c++-examples/tablaCalificaciones.png">
 </p>
-
 Utilizando esta información, escribir un algoritmo que acepte una calificación numeérica del estudiante (0-100), convierta esta calificación a su equivalente en letra y visualice la calificación correspondiente en letra.
 
 ```c++
