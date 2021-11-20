@@ -293,10 +293,66 @@ int main(){
 
 
 - - -
-## Diseñar un algoritmo para calucular el máximo común divisor de cuatro números basado en un subalgoritmo función mcd (máximo común divisor de dos números).
+## Diseñar un algoritmo para calucular el máximo común divisor de dos números basado en un subalgoritmo función mcd (máximo común divisor de dos números).
+
+```c++
+//Calculo de Maximo comun divisor de 2 numeros, 
+
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int main(){
+	//Declaracion de variables
+	int num1, num2, max, min, divisor, flag;
+	
+	do{
+		cout <<"\t\tMenu de Opciones\n";
+		cout <<"1. Calculo de MCD\n";
+		cout <<"2. Salir\n -> ";
+		cin >> flag;
+		
+		switch(flag){
+			case 1: //Entrada de datos
+				cout <<"\n---------------------------------------\n\n";
+				cout <<"Ingrese el primer Numero: \n -> ";
+				cin >> num1;
+				cout <<"Ingrese el segundo Numero: \n -> ";
+				cin >> num2;
+				cout <<"\n\n---------------------------------------";
+				
+				//Debemos identificar cual numero es el mayor de y menor respectivamente
+				max = std::max(num1,num2);
+				min = std::min(num1,num2);
+				
+				do{//Calculo del divisor
+					divisor = min;
+					min = max % min;
+					max = divisor; // Lo que va haciendo es continuar dividiendo
+				} while(min != 0);
+				
+				//Mostramos el resultado
+				system("cls");
+				cout <<"\n\n--------------------------------------------------------";
+				cout <<"\n\n-->El Maximo Comun Divisor entre "<< num1 << " y " << num2 << " es: " << divisor << endl;
+				cout <<"\n\n--------------------------------------------------------\n";
+				break;
+			case 2:
+				cout <<"--------------------------------";
+				cout <<"\n\nOk, saliendo ...";
+				break;
+			default:
+				break;
+		}
+	} while(flag != 2);
+	
+	
+	return 0;
+}
+```
 
 - - -
-
 ## Diseñar un algoritmo que calcule el mayor valor de una lista L de N elementos
 
 - - -
