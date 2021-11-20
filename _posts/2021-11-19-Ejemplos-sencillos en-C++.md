@@ -112,19 +112,19 @@ int main(){
 					
 					//Conversion de los sistemas de calificacion
 					if(notaInput >= 90 && notaInput < 100){
-						cout <<"\n** WOW, Tu calificion es una " << "A **\n\n";
+						cout <<"\n** WOW, Tu calificacion es una " << "A **\n\n";
 					}
 					else if(notaInput < 90 && notaInput >= 80){
-						cout <<"\n** Esta bien, Tu calificion es una " << "B **\n\n";
+						cout <<"\n** Esta bien, Tu calificacion es una " << "B **\n\n";
 					}
 					else if(notaInput < 80 && notaInput >= 70){
 						cout <<"\n **No esta mal, pero puede ser mejor, Tu calificacion es una " << "C **\n\n";
 					}
 					else if(notaInput < 70 && notaInput >= 60){
-						cout <<"\n **Deberias mejorar un poco, Tu calificion es una " << "D **\n\n";
+						cout <<"\n **Deberias mejorar un poco, Tu calificacion es una " << "D **\n\n";
 					}
 					else if(notaInput < 69){
-						cout <<"\n **Talves esto no sea lo tuyo :), Tu calificion es una " << "F **\n\n";
+						cout <<"\n **Talves esto no sea lo tuyo :), Tu calificacion es una " << "F **\n\n";
 					}else{//Mandamos este mensaje de error cuando la nota ingresada sea mayor a 100
 						cout <<"\nEsto no es una nota, revisalo porfavor y vuelve a intentarlo\n\n";
 					}
