@@ -35,3 +35,10 @@ Ahora hablemos un poco sobre los tipos de datos, esto es una forma de categoriza
 <center>
 <img src="https://k4lelv.github.io/assets/images/Variables-y-tipo-de-datos/Tipos-Datos.png">
 </center>
+
+Ahora veremos como se debe hacer uso de las variables dentro de PSeInt, para eso deberemos seguir los pasos siguientes:
+
+<center>
+<img src="https://k4lelv.github.io/assets/images/Variables-y-tipo-de-datos/Pasos.png">
+</center>
+</center>
