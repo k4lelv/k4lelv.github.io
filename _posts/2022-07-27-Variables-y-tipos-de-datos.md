@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Variables y tipos de datos '#1' - PSeInt
+title: Variables y tipos de datos 1# - PSeInt
 excerpt: "En este curso estaremos aprendiendo sobre los elementos básicos y principales al momento de programar, se hablará de los tipos de datos que la herramienta de PSeInt nos ofrece y respaldaremos con ejemplos sencillos pero interesantes..."
 date: 2022-07-27
 classes: wide
