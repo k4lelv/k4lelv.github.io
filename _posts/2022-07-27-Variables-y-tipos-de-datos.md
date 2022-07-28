@@ -30,3 +30,8 @@ Ahora sabiendo esto, podemos definir que una constante al igual que las variable
 </center>
 
 <br>
+Ahora hablemos un poco sobre los tipos de datos, esto es una forma de categorizar nuestras variables usadas, PSeInt nos permite usar `Entero`, `Real`, `Carácter` y `Lógico`.
+
+<center>
+<img src="https://k4lelv.github.io/assets/images/Variables-y-tipo-de-datos/Tipos-Datos.png">
+</center>
