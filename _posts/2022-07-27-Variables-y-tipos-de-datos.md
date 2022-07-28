@@ -5,7 +5,7 @@ excerpt: "En este curso estaremos aprendiendo sobre los elementos básicos y pri
 date: 2022-07-27
 classes: wide
 header:
-  teaser: https://k4lelv.github.io/assets/images/Variables-y-tipo-de-datos/Variables-Constantes.png
+  teaser: https://k4lelv.github.io/assets/images/Variables-y-tipo-de-datos/Banner.jpg
   teaser_home_page: true
 categories:
   - Academy
