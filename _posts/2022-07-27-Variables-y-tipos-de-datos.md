@@ -26,7 +26,7 @@ Las variables son elementos de un programa en el cual su función es almacenar v
 Ahora sabiendo esto, podemos definir que una constante al igual que las variables, conta de un nombre que por lo general se recomienda escribirlo con mayúsculas y tambien cuenta con el tipo de dato que almacenará, su única diferencia es que al momento de ejecución del programa este `no cambiará su valor`.
 
 <center>
-<img src="https:k4lelv.github.io\assets\images\Variables-y-tipo-de-datos/Variables-Constantes.png">
+<img src="https://k4lelv.github.io/assets/images\Variables-y-tipo-de-datos/Variables-Constantes.png">
 </center>
 
 <br>
