@@ -5,7 +5,7 @@ excerpt: "En este curso estaremos aprendiendo sobre los elementos básicos y pri
 date: 2022-07-27
 classes: wide
 header:
-  teaser: https://k4lelv.github.io/assets/images/whatsapp-fake-messages/whatsapp.jpg
+  teaser: https://k4lelv.github.io/assets/images/Variables-y-tipo-de-datos/Variables-Constantes.png
   teaser_home_page: true
 categories:
   - Academy
@@ -16,7 +16,7 @@ tags:
 ---
 
 <center>
-<img src="https://k4lelv.github.io/assets/images/whatsapp-fake-messages/whatsapp.jpg">
+<img src="https://k4lelv.github.io/assets/images/Variables-y-tipo-de-datos/Profile.jpg">
 </center>
 
 ## Uso de VARIABLES y CONSTANTES
@@ -52,3 +52,26 @@ Ahora veremos como se debe hacer uso de las variables dentro de PSeInt, para eso
 * No iniciar con número.
 * Sin espacios en blanco.
 * No usar carateres especiales.
+
+<center>
+<img src="https://k4lelv.github.io/assets/images/Variables-y-tipo-de-datos/Ejemplos.png">
+</center>
+
+<br>
+<br>
+<center>
+<img src="https://k4lelv.github.io/assets/images/Variables-y-tipo-de-datos/Codigo.png">
+</center>
+<br>
+Ahora damos en el boton verde para ejecutar nuestro programa para ver nuestro saludo.
+<center>
+<img src="https://k4lelv.github.io/assets/images/Variables-y-tipo-de-datos/Resultado.png">
+</center>
+
+<br>
+<br>
+
+### Para informarte más visita: 
+
+* [Metodología de la programación](https://ulisesorea.wordpress.com/2016/10/02/tipos-de-datos-en-pseint/)
+* [PSeInt - Documentacion](http://pseint.sourceforge.net/slide/pseint.html)
