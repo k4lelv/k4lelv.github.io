@@ -41,4 +41,11 @@ Ahora veremos como se debe hacer uso de las variables dentro de PSeInt, para eso
 <center>
 <img src="https://k4lelv.github.io/assets/images/Variables-y-tipo-de-datos/Pasos.png">
 </center>
-</center>
+
+**Nota: **Tener en cuenta que para poder usar variables se recomienda seguir las siguientes especificaciones:
+
+* No mayor de 8 letras.
+* Que el nombre sea lo más explícito de lo que contiene la variable.
+* No iniciar con número.
+* Sin espacios en blanco.
+* No usar carateres especiales.
