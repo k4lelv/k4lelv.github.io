@@ -37,6 +37,7 @@ Ahora hablemos un poco sobre los tipos de datos, esto es una forma de categoriza
 </center>
 
 <br>
+<br>
 Ahora veremos como se debe hacer uso de las variables dentro de PSeInt, para eso deberemos seguir los pasos siguientes:
 
 <center>
@@ -44,7 +45,7 @@ Ahora veremos como se debe hacer uso de las variables dentro de PSeInt, para eso
 </center>
 
 <br>
-**Nota: **Tener en cuenta que para poder usar variables se recomienda seguir las siguientes especificaciones:
+**Nota:** Tener en cuenta que para poder usar variables se recomienda seguir las siguientes especificaciones:
 
 * No mayor de 8 letras.
 * Que el nombre sea lo más explícito de lo que contiene la variable.
