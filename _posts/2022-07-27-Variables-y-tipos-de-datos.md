@@ -36,12 +36,14 @@ Ahora hablemos un poco sobre los tipos de datos, esto es una forma de categoriza
 <img src="https://k4lelv.github.io/assets/images/Variables-y-tipo-de-datos/Tipos-Datos.png">
 </center>
 
+<br>
 Ahora veremos como se debe hacer uso de las variables dentro de PSeInt, para eso deberemos seguir los pasos siguientes:
 
 <center>
 <img src="https://k4lelv.github.io/assets/images/Variables-y-tipo-de-datos/Pasos.png">
 </center>
 
+<br>
 **Nota: **Tener en cuenta que para poder usar variables se recomienda seguir las siguientes especificaciones:
 
 * No mayor de 8 letras.
